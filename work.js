@@ -10,7 +10,7 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-let loggerId = 0;
+let loggerId = null;
 
 const logger = () => {
   let currentColor = randomIntegerFromInterval(0, colors.length - 1);
